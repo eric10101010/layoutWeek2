@@ -55,6 +55,7 @@ img {
 }
 a {
     text-decoration: none;
+    display: block;
 }
 .container {
     margin: 0 auto;
@@ -69,7 +70,7 @@ a {
 .menuList {
     justify-content: space-between;
 }
-.menuItem a{
+.menuList h1, .menuList h3, .menuItem a{
     color: #D1D1D1;
 }
 .menuItem a:hover{
@@ -80,18 +81,17 @@ a {
 /*--section1--*/
 .indexBox {
     display: flex;
+    align-items: center;
 }
 .indexBanner {
-    background-color: #000;;
+    background-color: #000;
+    height: 992px;
+    display: flex;
+    align-items: center;
 }
 .bannerPhoto img {
-    margin-top: 72px;
-    margin-bottom: 72px;
     width: 636px;
     height: 848px;
-}
-.bannerText {
-    margin-top: 232px;
 }
 .bannerText h2{
     color: #00FFA3;;
@@ -121,15 +121,14 @@ a {
 }
 /*--section2--*/
 .indexIntro {
-    height: 920px;
     background: url(./img/background-img.png) no-repeat;
+    padding: 160px 0;
 }
 .introBox {
     display: flex;
     justify-content: space-between;
 }
 .introImg {
-    padding-top: 160px;
     column-gap: 20px;
 }
 .introImg img{
@@ -137,7 +136,6 @@ a {
     height: 600px;
 }
 .introText {
-    padding-top: 160px;
     color: #FFFFFF;
     width: 40%;
 }
@@ -156,12 +154,11 @@ a {
 .aboutBox {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .aboutData {
     color: #15161D;
     width: 50%;
-    margin-top: 206px;
-    margin-bottom: 214px;
 }
 .dataItem {
     padding: 16px;
@@ -174,9 +171,9 @@ a {
 }
 .aboutText {
     width: 40.5865%;
+    padding: 160px 0;
 }
 .aboutText h2 {
-    margin-top: 160px;
     padding-bottom: 36px;
     color: #000;
     font-size: 64px;
@@ -190,35 +187,30 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.indexContact {
-    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
-    height: 354px;
-    display: flex;
-}
-.contactButton {
-    padding-top: 129px;
-}
-.contactButton a{
-    color: #FFFFFF;
+.contactBox h3 {
+    color: #FFF;
     font-size: 64px;
 }
-.contactButton img{
-    display: flex;
-    align-items: center;
+.contactBox img{
     width: 100px;
     height: 100px;
 }
+.indexContact {
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    display: flex;
+    padding: 96px 0;
+}
 .contactIcon {
-    padding-top: 96px;
     column-gap: 24px;
 }
 .iconItem img{
     width: 162px;
+    height: 162px;
     border-radius: 40px;
 }
 .iconItem img:hover{
-    width: 162px;
     border-radius: 40px;
     transition: .3s;
 }
@@ -227,6 +219,9 @@ a {
     border-radius: 40px;
 }
 /*--section5--*/
+.indexProject {
+    padding: 160px 0;
+}
 .projectBox {
     display: flex;
     column-gap: 24px;
@@ -234,37 +229,21 @@ a {
 .topBox {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-.topBox span {
-    padding-top: 88px;
-}
-.topBox span a{
-    padding: 12px 24px;
+.moreBtn a {
+    width: 148px;
+    color: #FFF;
     background-color: #000;
-    border-radius: 32px;
-    color: #FFF;
-}
-.topBox span a:hover{
     padding: 12px 24px;
-    background-color: #00FFA3;
     border-radius: 32px;
-    color: #FFF;
-    transition: .3s;
-}
-.projectTitle {
-    margin-top: 160px;
-    display: flex;
-
-}
-.projectTitle h2{
-    width: 57.645%;
-}
-.projectTitle span{
-    width: 42.5%;
 }
 .projectTitle h2{
     color: #000;
     font-size: 64px;
+    margin-left: auto;
+    width: 746px;
+    padding-bottom: 16px;
 }
 .projectLeft {
     width: 43.738%;
@@ -289,11 +268,9 @@ a {
 }
 /*--footer--*/
 .footer {
-    line-height: 104px;
-    height: 104px;
+    padding: 40px 0;
     margin: auto 0;
     background-color: #000;
-    margin-top: 160px;
 }
 .footer h3 {
     text-transform:uppercase;
